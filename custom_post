@@ -1,0 +1,13 @@
+function asian_theme_custom_post(){
+		register_post_type('attendance', 
+			array(
+				'labels'		=>	array(
+				'name'			=>	__('হাজিরা', 'asian-theme'),
+				'singular_name'	=>	__('হাজিরা','asian-theme'),
+				'add_new_item'	=>	__('নতুন হাজিরা যুক্ত করুন', 'asian-theme'),
+				),
+			'public'	=>	true,
+			'menu_icon'	=>	'dashicons-forms',
+			'supports'	=>	array('title','page-attributes'),
+			)
+		);
